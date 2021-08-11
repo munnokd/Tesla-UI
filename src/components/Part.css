@@ -1,0 +1,109 @@
+.part{
+    width: 100vw;
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.part__title{
+    padding-top:15vh ;    
+    display: flex;
+    z-index: 10;
+    flex-direction: column;
+    align-items: center;
+}
+.part__title>h1{
+    color: #393c41;
+    font-size: 45px;
+}
+.part__info{
+    display: flex;
+    flex-direction: row;
+    color: rgb(110, 110, 110);
+}
+.part__p{
+    z-index: 10;
+    border-bottom: 1px solid rgb(95, 94, 94);
+    transition: border-bottom color 2s ease-out;
+}
+.part__p:hover{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid black;
+}
+.part__button{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+@media (max-width:527px){
+    .part__button{
+        flex-direction: column;
+    }
+}
+.part__button__1 {
+    background-color: #282a2c;
+    height: 40px;
+    width: 206px;
+    color: white;
+    outline-width: 0;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    opacity: 0.80;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 12px;
+    text-transform: uppercase;
+}
+.part__button__2{
+    background-color: #fff;
+    height: 40px;
+    width: 206px;
+    color: black;
+    outline-width: 0;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    opacity: 0.80;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 12px;
+    text-transform: uppercase;
+
+}
+
+.part__expand> .MuiSvgIcon-root{
+    color: white;
+    animation: MoveUpDown 1s linear infinite;
+    position:relative;
+    font-size: 50px;
+}
+@keyframes MoveUpDown {
+    0%, 100% {
+        bottom: 10px;
+    }
+    50% {
+        bottom: 5px;
+    }
+}
+
+.part__bot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
