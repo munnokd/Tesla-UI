@@ -11,8 +11,10 @@ const Header = () => {
 
   return (
     <div className="header">
-      <a className="header__logo">
-        <img src="/Images/logo.svg" alt="" />
+
+      <a className="header__logo" href="/">
+        <img src="/Images/logo.svg" alt="logo" />
+
       </a>
       <div className="header__list">
         {cars &&
@@ -24,8 +26,9 @@ const Header = () => {
       </div>
       <div className="header__menu">
         <div className="header__menu__a">
-          <a href="#">Shop</a>
-          <a href="#">Account</a>
+          <a href="/">Shop</a>
+          <a href="/">Account</a>
+
         </div>
         <p className="header__menu__1" onClick={() => setClose(true)}>
           Menu
@@ -44,19 +47,20 @@ const Header = () => {
                 </a>
               ))}
           </div>
-          <a href="#">Existing Inventory</a>
-          <a href="#">Used Inventory</a>
-          <a href="#">Trade-In</a>
-          <a href="#">Test Drive</a>
-          <a href="#">Powerwall</a>
-          <a href="#">Commercial Energy</a>
-          <a href="#">Utilities</a>
-          <a href="#">Charging</a>
-          <a href="#">Find Us</a>
-          <a href="#">Support</a>
-          <a href="#">Investor Relations</a>
-          <a href="#">Account</a>
-          <a className="header__menu__icon" href="#">
+
+          <a href="/">Existing Inventory</a>
+          <a href="/">Used Inventory</a>
+          <a href="/">Trade-In</a>
+          <a href="/">Test Drive</a>
+          <a href="/">Powerwall</a>
+          <a href="/">Commercial Energy</a>
+          <a href="/">Utilities</a>
+          <a href="/">Charging</a>
+          <a href="/">Find Us</a>
+          <a href="/">Support</a>
+          <a href="/">Investor Relations</a>
+          <a href="/">Account</a>
+          <a className="header__menu__icon" href="/">
             More
             <ChevronRightIcon fontSize="small" />
           </a>

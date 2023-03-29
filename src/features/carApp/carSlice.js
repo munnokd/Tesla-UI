@@ -1,7 +1,7 @@
 import {createSlice} from '@reduxjs/toolkit'
 
 const initialState={
-    cars:["Model S","Model Y","Model 3","Model X","solr Panels","Solar Roof"]
+    cars:["Model S","Model Y","Model 3","Model X","Solar Panels","Solar Roof"]
 }
 const carSlice=createSlice({
     name:"car",
