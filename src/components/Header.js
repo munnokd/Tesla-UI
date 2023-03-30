@@ -11,8 +11,10 @@ const Header = () => {
 
   return (
     <div className="header">
+
       <a className="header__logo" href="/">
         <img src="/Images/logo.svg" alt="logo" />
+
       </a>
       <div className="header__list">
         {cars &&
@@ -26,6 +28,7 @@ const Header = () => {
         <div className="header__menu__a">
           <a href="/">Shop</a>
           <a href="/">Account</a>
+
         </div>
         <p className="header__menu__1" onClick={() => setClose(true)}>
           Menu
@@ -44,6 +47,7 @@ const Header = () => {
                 </a>
               ))}
           </div>
+
           <a href="/">Existing Inventory</a>
           <a href="/">Used Inventory</a>
           <a href="/">Trade-In</a>
